@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+        
+<input name="search" #searchTerm>
+        
+<button (click)="performSearch(searchTerm)">Search</button>
+
+<br>
+
+<div *ngFor="let g of giphies">
+	<img src="{{g.images.original.url}}">
+</div>

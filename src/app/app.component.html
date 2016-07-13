@@ -2,7 +2,7 @@
   {{title}}
 </h1>
         
-<input name="search" #searchTerm>
+<input name="search" #searchTerm (keyup.enter)="performSearch(searchTerm)">
         
 <button (click)="performSearch(searchTerm)">Search</button>
 
